@@ -7,7 +7,7 @@
     --image-sidebar-size: 20%;
     --content-gap: 10px;
 
-    --image-sidebar: url(https://images.unsplash.com/photo-1763076705118-8c3c03fee057?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    --image-sidebar: url(https://github.com/RevistaGonzalina/RevistaGonzalina/blob/main/img/FGS.jpg?raw=true);
     --body-font: "Nunito";
     --font-color: #1f1c1c;
 
@@ -53,7 +53,7 @@
     --footer-link: #891212;
 
     @media (prefers-color-scheme: dark) {
-        --image-sidebar: url(https://images.unsplash.com/photo-1763076705118-8c3c03fee057?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        --image-sidebar: urlhttps://github.com/RevistaGonzalina/RevistaGonzalina/blob/main/img/FGS.jpg?raw=true);
         --font-color: #ffebeb;
 
         --focus-color: #ff00a4;
