@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
         <!-- Setting character encoding and viewport size. Do not remove. -->
         <meta charset="UTF-8" />
@@ -20,14 +20,17 @@
         <!-- CSS: -->
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/secciones.css" />
 
         <!-- JavaScript: -->
         <!--<script src="js/header.js"></script>-->
+        <script src="data/contenido.js"></script>
+        <script src="js/sitio.js" defer></script>
 
         <!-- FavIcon -->
         <!--<link rel="icon" type="image/png" href="favicon.png" />-->
     </head>
-    <body>
+    <body data-pagina="inicio">
         <div id="skip"><a href="#content">Skip to content</a></div>
         <a href="#content" id="backscroll" class="backscroll" title="Go to top">Top</a>
 
@@ -45,13 +48,8 @@
                 <div class="description">
                     Bienvenidos a la Página Principal de nuestra revista! explora el sitio con completa libertad 
                 </div>
-                <nav>
-                    <a href="">link</a>
-                    <a href="">link</a>
-                    <a href="">longer link</a>
-                    <a href="">cooler link</a>
-                    <a href="">awesome link</a>
-                </nav>
+                <!-- El menú se arma solo desde la lista "secciones" de js/sitio.js -->
+                <nav id="menu"></nav>
                 <a href="https://www.deviantart.com/angelichellraiser/art/D-Velvet-Red-Hearts-511571203"
                     ><img
                         src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/211a4af8-f452-468b-b4d4-630a784a3973/d8gkqv7-8af1f63b-81e7-4cde-9d17-5ba5cdd98c4f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8yMTFhNGFmOC1mNDUyLTQ2OGItYjRkNC02MzBhNzg0YTM5NzMvZDhna3F2Ny04YWYxZjYzYi04MWU3LTRjZGUtOWQxNy01YmE1Y2RkOThjNGYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.eVuq-L3eKsentxFMNtKY0hSY7Lz-zqgYzv6AH2adKqg"
@@ -183,6 +181,13 @@
                             </li>
                         </ul>
                     </details>
+                </section>
+                <section id="ultimos">
+                    <h2>Lo más nuevo</h2>
+                    <div id="ultimos-articulos"></div>
+                    <h3>Fotos recientes</h3>
+                    <div id="ultimas-fotos" class="image-gallery"></div>
+                    <p class="center-item"><a href="galeria.html">Ver todo el muro de fotos →</a></p>
                 </section>
                 <section>
                     <img
@@ -345,7 +350,10 @@ Textarea</textarea
                     <p><textarea>Textarea</textarea></p>
                     <p><button type="button">Button</button></p>
                 </section>
-                <footer>2025. laces template by <a href="https://vgen.co/asuraid">asuraid</a>.</footer>
+                <footer>
+                    2025. laces template by <a href="https://vgen.co/asuraid">asuraid</a>. ·
+                    <a href="publicar.html">Panel del equipo</a>
+                </footer>
             </main>
         </div>
     </body>

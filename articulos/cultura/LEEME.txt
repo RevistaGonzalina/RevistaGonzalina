@@ -1,0 +1,2 @@
+Esta carpeta guarda los articulos de la seccion "Cultura estudiantil".
+Cada articulo es un archivo .md. Puedes borrar este archivo cuando subas el primero.

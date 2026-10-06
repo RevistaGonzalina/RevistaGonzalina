@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Panel del equipo · Revista Gonzalina</title>
+        <meta name="author" content="Revista Gonzalina" />
+        <meta content="Panel para publicar artículos." name="description" />
+        <meta name="robots" content="noindex" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/secciones.css" />
+        <script src="data/contenido.js"></script>
+        <script src="js/sitio.js" defer></script>
+    </head>
+    <body data-pagina="publicar">
+        <div id="skip"><a href="#content">Saltar al contenido</a></div>
+        <a href="#content" id="backscroll" class="backscroll" title="Ir arriba">Arriba</a>
+
+        <div class="container">
+            <div id="image-sidebar"></div>
+            <div id="sidebar">
+                <a href="https://www.deviantart.com/angelichellraiser/art/D-Dark-Simplicity-613766352"
+                    ><img
+                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/211a4af8-f452-468b-b4d4-630a784a3973/da5f55c-84d7baee-0a0e-42f4-9a66-7eea2fdf720c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8yMTFhNGFmOC1mNDUyLTQ2OGItYjRkNC02MzBhNzg0YTM5NzMvZGE1ZjU1Yy04NGQ3YmFlZS0wYTBlLTQyZjQtOWE2Ni03ZWVhMmZkZjcyMGMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JZzgOeW8xsdRYRqAZh_CaJr0-f9qhT6U807uLmCkWfM"
+                        loading="lazy"
+                        class="hide-mobile"
+                        alt="pixel red candle divider"
+                /></a>
+                <div class="icon"><img src="https://github.com/RevistaGonzalina/RevistaGonzalina/blob/main/img/image.jpg?raw=true"/></div>
+                <div class="description">
+                    Bienvenidos a la Página Principal de nuestra revista! explora el sitio con completa libertad 
+                </div>
+                <!-- El menú se arma solo desde la lista "secciones" de js/sitio.js -->
+                <nav id="menu"></nav>
+                <a href="https://www.deviantart.com/angelichellraiser/art/D-Velvet-Red-Hearts-511571203"
+                    ><img
+                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/211a4af8-f452-468b-b4d4-630a784a3973/d8gkqv7-8af1f63b-81e7-4cde-9d17-5ba5cdd98c4f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8yMTFhNGFmOC1mNDUyLTQ2OGItYjRkNC02MzBhNzg0YTM5NzMvZDhna3F2Ny04YWYxZjYzYi04MWU3LTRjZGUtOWQxNy01YmE1Y2RkOThjNGYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.eVuq-L3eKsentxFMNtKY0hSY7Lz-zqgYzv6AH2adKqg"
+                        loading="lazy"
+                        class="hide-mobile"
+                        alt="pixel red heart divider"
+                /></a>
+                <hr />
+                <div class="togglegif">
+                    <label for="fontFamily">Font:</label>
+                    <select name="fontFamily" id="fontFamily" style="width: 150px">
+                        <option value="Nunito">Nunito</option>
+                        <option value="rainyhearts">Rainy Hearts</option>
+                    </select>
+                </div>
+            </div>
+            <main id="content">
+                <section>
+                    <h1>Panel del equipo</h1>
+                    <p>
+                        Desde aquí publicas un artículo <strong>sin escribir código</strong>. Esta página es solo para
+                        el equipo de la revista.
+                    </p>
+                    <ol class="pasos">
+                        <li>Llena el formulario y revisa la vista previa que aparece más abajo.</li>
+                        <li>Si quieres foto de portada, súbela primero con el botón «Subir imágenes de artículos».</li>
+                        <li>
+                            Pulsa <strong>Publicar en GitHub</strong>. Se abrirá GitHub con tu artículo ya escrito; solo
+                            confirma con el botón verde «Commit changes…».
+                        </li>
+                        <li>En 1 o 2 minutos el artículo aparece solo en la revista.</li>
+                    </ol>
+                    <p><small>Para confirmar en GitHub debes haber iniciado sesión con la cuenta de la revista.</small></p>
+                </section>
+                <section>
+                    <h2>Nuevo artículo</h2>
+                    <form id="p-form" onsubmit="return false">
+                        <label class="campo">
+                            <span>Sección</span>
+                            <select id="p-seccion"></select>
+                        </label>
+                        <label class="campo">
+                            <span>Título</span>
+                            <input type="text" id="p-titulo" maxlength="140" />
+                        </label>
+                        <label class="campo">
+                            <span>Autor o autora</span>
+                            <input type="text" id="p-autor" maxlength="80" />
+                        </label>
+                        <label class="campo">
+                            <span>Fecha</span>
+                            <input type="date" id="p-fecha" />
+                        </label>
+                        <label class="campo">
+                            <span>Resumen (opcional)</span>
+                            <input type="text" id="p-resumen" maxlength="240" />
+                            <small>Una o dos frases que aparecen en el muro. Si lo dejas vacío se crea solo.</small>
+                        </label>
+                        <label class="campo">
+                            <span>Imagen de portada (opcional)</span>
+                            <input type="text" id="p-imagen" placeholder="img/articulos/mi-foto.jpg" />
+                            <small>Escribe la ruta de la imagen que subiste (o un enlace completo https://…).</small>
+                        </label>
+                        <label class="campo">
+                            <span>Texto del artículo</span>
+                            <textarea id="p-texto"></textarea>
+                        </label>
+                        <details>
+                            <summary>¿Cómo doy formato al texto?</summary>
+                            <ul>
+                                <li><code>## Subtítulo</code> crea un subtítulo</li>
+                                <li><code>**negrita**</code> y <code>*cursiva*</code></li>
+                                <li><code>- elemento</code> crea una lista (un guion por línea)</li>
+                                <li><code>&gt; frase</code> crea una cita destacada</li>
+                                <li><code>[texto](https://enlace.com)</code> crea un enlace</li>
+                                <li><code>![descripción](img/articulos/foto.jpg)</code> inserta una imagen</li>
+                                <li>Deja una línea en blanco para separar párrafos</li>
+                            </ul>
+                        </details>
+                        <div class="acciones">
+                            <button type="button" id="p-publicar" class="principal">Publicar en GitHub</button>
+                            <button type="button" id="p-copiar">Copiar texto</button>
+                            <button type="button" id="p-descargar">Descargar archivo</button>
+                        </div>
+                        <p class="aviso" id="p-aviso" hidden role="status"></p>
+                    </form>
+                </section>
+                <section>
+                    <h2>Vista previa</h2>
+                    <div id="p-previa" class="articulo"></div>
+                </section>
+                <section>
+                    <h2>Subir fotos e imágenes</h2>
+                    <p>
+                        Las fotos que subas a la carpeta <code>fotos</code> aparecen solas en el muro de la Galería.
+                        El nombre del archivo se usa como pie de foto, por ejemplo
+                        <code>2026-10-06-Feria de ciencias.jpg</code>.
+                    </p>
+                    <div class="acciones">
+                        <a class="boton" id="p-link-fotos" target="_blank" rel="noopener">Subir fotos al muro</a>
+                        <a class="boton" id="p-link-imagenes" target="_blank" rel="noopener">Subir imágenes de artículos</a>
+                        <a class="boton" id="p-link-repo" target="_blank" rel="noopener">Abrir el repositorio</a>
+                    </div>
+                </section>
+                <footer>
+                    Revista Gonzalina · laces template by <a href="https://vgen.co/asuraid">asuraid</a>. ·
+                    <a href="publicar.html">Panel del equipo</a>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>

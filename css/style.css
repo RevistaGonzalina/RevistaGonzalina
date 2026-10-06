@@ -53,7 +53,7 @@
     --footer-link: #891212;
 
     @media (prefers-color-scheme: dark) {
-        --image-sidebar: urlhttps://github.com/RevistaGonzalina/RevistaGonzalina/blob/main/img/FGS.jpg?raw=true);
+        --image-sidebar: url(https://github.com/RevistaGonzalina/RevistaGonzalina/blob/main/img/FGS.jpg?raw=true);
         --font-color: #ffebeb;
 
         --focus-color: #ff00a4;

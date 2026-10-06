@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Conciencia y apoyo · Revista Gonzalina</title>
+        <meta name="author" content="Revista Gonzalina" />
+        <meta content="Artículos sobre conciencia y apoyo entre estudiantes." name="description" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/secciones.css" />
+        <script src="data/contenido.js"></script>
+        <script src="js/sitio.js" defer></script>
+    </head>
+    <body data-pagina="seccion" data-seccion="apoyo">
+        <div id="skip"><a href="#content">Saltar al contenido</a></div>
+        <a href="#content" id="backscroll" class="backscroll" title="Ir arriba">Arriba</a>
+
+        <div class="container">
+            <div id="image-sidebar"></div>
+            <div id="sidebar">
+                <a href="https://www.deviantart.com/angelichellraiser/art/D-Dark-Simplicity-613766352"
+                    ><img
+                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/211a4af8-f452-468b-b4d4-630a784a3973/da5f55c-84d7baee-0a0e-42f4-9a66-7eea2fdf720c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8yMTFhNGFmOC1mNDUyLTQ2OGItYjRkNC02MzBhNzg0YTM5NzMvZGE1ZjU1Yy04NGQ3YmFlZS0wYTBlLTQyZjQtOWE2Ni03ZWVhMmZkZjcyMGMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JZzgOeW8xsdRYRqAZh_CaJr0-f9qhT6U807uLmCkWfM"
+                        loading="lazy"
+                        class="hide-mobile"
+                        alt="pixel red candle divider"
+                /></a>
+                <div class="icon"><img src="https://github.com/RevistaGonzalina/RevistaGonzalina/blob/main/img/image.jpg?raw=true"/></div>
+                <div class="description">
+                    Bienvenidos a la Página Principal de nuestra revista! explora el sitio con completa libertad 
+                </div>
+                <!-- El menú se arma solo desde la lista "secciones" de js/sitio.js -->
+                <nav id="menu"></nav>
+                <a href="https://www.deviantart.com/angelichellraiser/art/D-Velvet-Red-Hearts-511571203"
+                    ><img
+                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/211a4af8-f452-468b-b4d4-630a784a3973/d8gkqv7-8af1f63b-81e7-4cde-9d17-5ba5cdd98c4f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8yMTFhNGFmOC1mNDUyLTQ2OGItYjRkNC02MzBhNzg0YTM5NzMvZDhna3F2Ny04YWYxZjYzYi04MWU3LTRjZGUtOWQxNy01YmE1Y2RkOThjNGYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.eVuq-L3eKsentxFMNtKY0hSY7Lz-zqgYzv6AH2adKqg"
+                        loading="lazy"
+                        class="hide-mobile"
+                        alt="pixel red heart divider"
+                /></a>
+                <hr />
+                <div class="togglegif">
+                    <label for="fontFamily">Font:</label>
+                    <select name="fontFamily" id="fontFamily" style="width: 150px">
+                        <option value="Nunito">Nunito</option>
+                        <option value="rainyhearts">Rainy Hearts</option>
+                    </select>
+                </div>
+            </div>
+            <main id="content">
+                <section class="sec-cabecera">
+                    <h1 id="sec-titulo">Sección</h1>
+                    <p id="sec-desc"></p>
+                    <div class="buscador">
+                        <label for="buscar">Buscar:</label>
+                        <input type="search" id="buscar" placeholder="Título, autor o tema…" />
+                    </div>
+                    <p class="muro-estado" id="muro-estado" aria-live="polite" style="text-align: center"></p>
+                </section>
+                <div id="muro-ancla" class="muro-pie">
+                    <button type="button" id="mas" hidden>Cargar más artículos</button>
+                </div>
+                <footer>
+                    Revista Gonzalina · laces template by <a href="https://vgen.co/asuraid">asuraid</a>. ·
+                    <a href="publicar.html">Panel del equipo</a>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>

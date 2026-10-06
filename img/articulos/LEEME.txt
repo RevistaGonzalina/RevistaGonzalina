@@ -1,0 +1,3 @@
+Sube aqui las imagenes de portada de tus articulos.
+Despues escribe su ruta (por ejemplo img/articulos/mi-foto.jpg) en el campo "imagen" del articulo.
+Puedes borrar este archivo cuando subas la primera imagen.
