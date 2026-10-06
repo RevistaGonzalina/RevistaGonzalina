@@ -1,0 +1,60 @@
+# Este archivo es el "robot" de la revista.
+# Debe quedar guardado en el repositorio con esta ruta exacta:
+#     .github/workflows/indexar.yml
+# (la guía GUIA-REVISTA.md explica cómo crearlo paso a paso)
+#
+# Cada vez que subes un artículo o una foto, el robot actualiza solo
+# la lista que usa la página. No necesitas modificar nada aquí.
+
+name: Actualizar contenido de la revista
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "articulos/**"
+      - "fotos/**"
+      - "img/articulos/**"
+      - "scripts/indexar.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: indexar-contenido
+  cancel-in-progress: false
+
+jobs:
+  indexar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar herramienta de imágenes
+        run: pip install pillow
+
+      - name: Actualizar la lista de artículos y fotos
+        run: python scripts/indexar.py
+
+      - name: Guardar los cambios
+        run: |
+          git config user.name "Robot de la revista"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A -- data miniaturas
+          if git diff --cached --quiet; then
+            echo "No hay cambios que guardar."
+          else
+            git commit -m "Actualizar contenido de la revista (automático)"
+            git pull --rebase origin main
+            git push origin main
+          fi
