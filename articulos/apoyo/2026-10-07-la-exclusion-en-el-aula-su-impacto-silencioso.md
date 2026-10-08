@@ -2,7 +2,7 @@ titulo: La exclusión en el aula, su impacto silencioso
 autor: El Equipo De Escritoras
 fecha: 2026-10-07
 resumen: Los efectos de un acoso silencioso muchas veces ignorado, la exclusión y cómo afecta a los jóvenes en su vida estudiantil
-imagen: https://github.com/RevistaGonzalina/RevistaGonzalina/blob/03b8142488627b9ffa3e7f8058b0398e398a198d/img/articulos/separado.jpg
+imagen: img/articulos/separado.jpg
 
 Es probablemente de las problemáticas en la comunidad estudiantil mas fáciles de pasar por alto, además de las modalidades más difíciles de combatir porque suele ser invisible y no deja marcas físicas en sus víctimas.
 La exclusión dentro de el ámbito estudiantil se sintetiza en segregar al joven, ningunearlo, tratarlo como si no existiera e impedir su participación en los juegos o trabajos, generando un vacío social a su alrededor.
