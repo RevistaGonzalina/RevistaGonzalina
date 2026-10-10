@@ -23,7 +23,7 @@
         articulosPorPagina: 6,
         fotosPorTanda: 18,
 
-        // Secciones del menú. "tipo" puede ser: "inicio", "articulos" o "fotos".
+        // Secciones del menú. "tipo" puede ser: "inicio", "articulos", "fotos" o "pagina" (página suelta).
         // Para las de tipo "articulos", "id" es también el nombre de la carpeta
         // dentro de /articulos/ donde viven sus artículos.
         secciones: [
@@ -43,7 +43,8 @@
             {
                 id: "galeria", titulo: "Galería", url: "galeria.html", tipo: "fotos",
                 descripcion: "Un muro de fotos que nunca termina: sigue bajando y descubre más momentos de nuestra comunidad."
-            }
+            },
+            { id: "creditos", titulo: "Créditos", url: "creditos.html", tipo: "pagina" }
         ]
     };
 
@@ -95,7 +96,11 @@
 
     function urlImagen(ruta) {
         if (!ruta) return "";
-        return esExterna(ruta) ? ruta : rutaArchivo(ruta);
+        if (!esExterna(ruta)) return rutaArchivo(ruta);
+        // Si pegaste el enlace de una imagen tal como lo muestra GitHub
+        // (https://github.com/usuario/repo/blob/...), lo convertimos al enlace real de la imagen.
+        var m = /^https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\/([^?#]+)/i.exec(ruta);
+        return m ? "https://raw.githubusercontent.com/" + m[1] + "/" + m[2] + "/" + m[3] : ruta;
     }
 
     // Solo permite enlaces http, https, mailto y rutas internas
@@ -667,6 +672,7 @@
         else if (pagina === "galeria") iniciarGaleria();
         else if (pagina === "articulo") iniciarArticulo();
         else if (pagina === "publicar") iniciarPublicar();
+        else if (pagina === "creditos") pintarMenu("creditos");
         else pintarMenu("");
     }
 
